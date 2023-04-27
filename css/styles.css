@@ -1,0 +1,545 @@
+body::-webkit-scrollbar{
+  width: 0.5rem;
+  
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  
+}
+
+body::-webkit-scrollbar-track{
+  background: white;
+  
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(107, 104, 104);
+}
+
+
+h1{
+  color: green;
+
+}
+
+
+/* news */
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+  background: #eee;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+ 
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+ 
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 50s infinite; }
+.hmove:hover { animation-play-state: paused; }
+
+
+
+
+/* loader */
+
+
+
+
+/* sidebark */
+
+
+
+
+
+.foot{
+  color: white;
+  border-bottom: 1px solid;
+  padding-left: 72%;
+  margin-bottom: 10px;
+}
+.container{
+  border: 1px solid;
+  border-top: 0px;
+  border-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* NAVBAR */
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  /* gap: 0.5em; */
+}
+.quick_logo{
+  height: 5rem;
+  width: 5.5rem;
+}
+em{
+  color:#30D5C8 ;
+}
+.d-flex{
+  margin-right: 20%;
+
+}
+.navbar{
+  padding: 2px;
+  
+}
+.navbar-brand{
+  font-family: 'Caveat', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+}
+.nav-link{
+  font-size: 1.2rem;
+}
+.red_brand{
+  color: #5F8D4E;
+}
+.notification {
+  color: white;
+  /* padding-left: 50px; */
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+.fi-xwsuxl-car-front-small{
+  font-size: 3rem;
+  color: #5F8D4E;
+}
+
+/* login signin */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* COUROSEL */
+.d-flex{
+  width:300px;
+}
+.img_caro{
+  height: 550px;
+  margin-bottom: 30px;
+}
+.img_caro_cartoon{
+  height: 480px;
+  margin-bottom: 30px;
+}
+.carousel{
+  margin-left: 15px;
+  margin-right:15px;
+}  
+@media (max-width:600px){
+  .img_caro{
+      
+    height: 200px;
+  }
+  
+}
+@media (max-width:881px){
+  .img_caro{
+      
+    height: 400px;
+  }
+  
+}
+
+/* side_button */
+.side-btn{
+  position: fixed;
+  top:350px;
+  right: 0;
+  width:3rem;
+  height:80px;
+  z-index:999;
+  border-end-end-radius:0px ;
+  border-top-right-radius: 0px;
+  color: #5F8D4E;
+  
+}
+.side-btn:hover{
+  width: 4rem;
+  
+}
+.fi-xnsrxl-phone-solid{
+  padding-right:100px;
+  margin-right: 20px;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  top: 150%;
+  right: -85px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 5px 5px 5px 5px; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+
+
+/* filter */
+
+/* categories */
+
+
+
+.cat_slide{
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  overflow-y: auto;
+  overscroll-behavior-x: x mandatory;
+  scrollbar-width: none;
+}
+
+.cat_slide::-webkit-scrollbar{
+  width: 2px;
+  
+  height: 5px;
+}
+.cat_slide::-webkit-scrollbar-track{
+  background:white;
+}
+.cat_slide::-webkit-scrollbar-thumb{
+  background-color: rgb(107, 104, 104);;
+}
+.cat_slide::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  
+}
+
+
+
+.cat_icon{
+  font-size: 2rem;
+  color: #30D5C8;
+  
+}
+.card_cat
+{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.25);
+}
+.card-body_cat{
+  text-align: center;
+  background-color: #C7F2A4;
+}
+.cat_txt{
+  margin-top: 20px;;
+  margin-left: 35px;
+}
+.zoom {
+  transition: transform .5s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@media (max-width:575px){
+  .card{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+body { 
+  overflow-x: hidden; 
+  /* Hide horizontal scrollbar */
+}
+
+/* deals */
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+*{
+    margin:0;
+    padding:0;
+
+}
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:50vh;
+    
+} 
+.wrapper .content .deals_h1{
+    margin-left:30px;
+}
+
+
+.deals_img{
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+}
+ 
+
+
+
+
+.wrapper .deals_card{
+    text-align:center;
+    color:azure;
+    font-family: 'Girassol', cursive;
+    text-transform:uppercase;
+    font-size:23px;
+    line-height:10px;
+    margin-bottom:20px;
+}
+.deals_card{
+  margin: 10px 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:200px;
+    width:200px;
+    border-radius:25px;
+    position:relative;
+    cursor:pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+.deals_card::before{
+    position:absolute;
+     background-color:blue;
+     height:100px;
+     width:100px;
+     border-radius:50%;
+     font-size:30px;
+     text-align:center;
+     font-size:24px;
+     color:#fff;
+     line-height:30px;
+     vertical-align: 50%;
+     padding:14px 3px 5px 6px;
+     bottom:40px;
+     right:60px;
+}
+
+.in_card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.zoom_deal {
+  transition: transform .5s; /* Animation */
+}
+
+.zoom_deal:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.deal{
+  margin-left: 35px;
+}
+
+
+
+.green-line{
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 3px;
+  width:12%;
+  background-color: #5F8D4E;
+  border-radius: 20px 20px 20px 20px ;
+}
+/* side-scroll */
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: gray;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+.oem-img{
+  border-radius: 20px;
+  height: 8rem;
+  margin: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.scrollmenu::-webkit-scrollbar{
+  width: 0.1rem;
+  height: 6px;
+}
+.scrollmenu::-webkit-scrollbar-track{
+  background:white;
+}
+.scrollmenu::-webkit-scrollbar-thumb{
+  background-color: rgb(107, 104, 104);;
+  border-radius: 10px;
+}
+/* review */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 20px auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 80%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
+
+
+
+
+

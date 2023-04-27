@@ -1,0 +1,555 @@
+body{
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+  width: 0.5rem;
+
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+
+}
+
+body::-webkit-scrollbar-track{
+  background: white;
+
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(107, 104, 104);
+}
+
+
+.sidebar::-webkit-scrollbar{
+  width: 0.5rem;
+
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+
+}
+
+.sidebar::-webkit-scrollbar-track{
+  background: white;
+
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background-color: rgb(107, 104, 104);
+}
+
+
+
+.quick_logo{
+  height: 5rem;
+  width: 5.5rem;
+}
+em{
+  color:#30D5C8 ;
+}
+.d-flex{
+  margin-right: 20%;
+
+}
+.navbar{
+  padding: 2px;
+  box-shadow: 5px 8px 16px 5px rgba(0,0,0,0.2);
+
+}
+.navbar-brand{
+  font-family: 'Caveat', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3rem;
+  color: black;
+}
+.nav-link{
+  font-size: 1.2rem;
+}
+.red_brand{
+  color: #5F8D4E;
+}
+.notification {
+  color: white;
+  /* padding-left: 50px; */
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  margin-top: 10px;
+}
+.fi-xwsuxl-car-front-small{
+  font-size: 3rem;
+  color: #5F8D4E;
+}
+
+.blue-image {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blue'><feColorMatrix type='matrix' values='0 0 0 0 0.4 0 0 0 0 0.8 0 0 1 0 1 0 0 0 1 0'/></filter></svg>#blue");
+}
+
+/* lights */
+
+.card-img-top{
+ height: 250.0px;
+ width: 260.2px;
+}
+
+
+/* sidebar */
+
+main{
+  margin-left: 7rem;
+
+}
+.sidebar{
+  margin-top: 9px;
+  width: 5rem;
+  height: 95vh;
+  position: fixed;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+
+}
+
+
+
+.sidebar-sid{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.link-text{
+  color: black;
+}
+/* .sid-item:last-child{
+  margin-top:350px;
+} */
+/* .sid-item:hover{
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+} */
+.sid-item{
+  margin-left: 13px;
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+.sid-link{
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  text-decoration: none;
+}
+.link-text{
+  display: none;
+}
+.sid-link .sid-img{
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+.sidebar:hover {
+  width: 17.5rem;
+  text-align: left;
+  z-index: 1;
+  margin-bottom: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+}
+.sidebar:hover .link-text{
+  display: block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+.logo{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+.logo .sid-img{
+  transform: rotate(0deg);
+  transition: transform var(--transition-speed);
+}
+
+.sidebar:hover .logo .sid-img{
+  transform: rotate(-180deg);
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  /* gap: 0.5em; */
+}
+
+
+/* filter */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;  }
+
+
+.dropdown:hover .dropdown-content {display: block; }
+
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+/* Fix 401 */
+}
+
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+/* This class is applied to the lower origin when
+   its values is > 50%. */
+  z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s,top .3s;
+  transition: left 0.3s,top .3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base,.noUi-handle {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 4px;
+  width: 8rem;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+  background-color: #345DBB;
+}
+
+/* Styling;
+ */
+.noUi-background {
+  background: #D6D7D9;
+}
+
+.noUi-connect {
+  background: #345DBB;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
+}
+
+.noUi-origin {
+  border-radius: 2px;
+}
+
+.noUi-target {
+  border-radius: 2px;
+}
+
+
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+.noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+  border: 8px solid #345DBB;
+  border: 8px solid rgba(53,93,187,0.38);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+/* Disabled state;
+ */
+[disabled].noUi-connect,[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled].noUi-origin,[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+
+
+
+.form-group {
+  display: block;
+
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content:'';
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Customize the label (the container) */
+/* check */
+.container-box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid;
+}
+
+/* On mouse-over, add a grey background color */
+.container-box:hover input ~ .checkmark {
+  background-color: #ccc;
+  
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-box input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-box .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* main */
+
+.card-cards:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+/* QNA CSS */
+
+.faq{
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.faq_question {
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 10px 10px 42px;
+  background: #e8e8e8;
+  color: #333;
+  position: relative;
+}
+.faq_question::before, .faq_question::after{
+position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate3d(0, -50%, 0);
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+margin-right: 20px;
+  background-color: rgba(0,0,0,.3);
+  background-position: center center;
+  background-repeat: no-repeat;
+ }
+.faq_question::before{
+display: inline-block;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%2214%2C5%209%2C5%209%2C0%205%2C0%205%2C5%200%2C5%200%2C9%205%2C9%205%2C14%209%2C14%209%2C9%2014%2C9%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.faq_question::after{
+display: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20y%3D%225%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2214%22%20height%3D%224%22%2F%3E%3C%2Fsvg%3E");
+}
+.faq.open .faq_question{
+border-bottom: 1px solid #bbb;
+}
+.faq.open .faq_question::before{
+display: none;
+}
+.faq.open .faq_question::after{
+display: block;
+}
+.faq_answer_container {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.faq_answer{
+padding: 20px;
+font-size: 1.1rem;
+}

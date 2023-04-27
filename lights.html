@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="css/lights.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+
+<div>
+
+  <nav id="navbar_top" class="navbar navbar-expand-lg   bg-light navbar-light " style="border-radius: 20px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="static/mechanic.png" style="height: 50px;" alt=""><em class="red_brand">Quik</em><em>Spares</em></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Delivery</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" >
+          <input class="form-control form-control-md me-2" type="search" placeholder="Search" aria-label="Search" >
+          <button class="btn se btn-outline-success" type="submit"><img src="static/search-interface-symbol.png" alt="" style="height:20px ;"></button>
+        </form>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+
+          <li class="nav-item">
+            <a class="nav-link active notification" aria-current="page" href="#">
+              <img src="static/trolley.png " alt="" style="height: 30px;"></i>&nbsp&nbsp 
+              <span class="badge">3</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+  <!-- SIDEBAR -->
+<div class="side-div">
+  <nav class="sidebar bg-light">
+    <ul class="sidebar-sid">
+      <li class="logo" style="margin-bottom: 50px; margin-left: 20px;">
+        <span class="sid-link">
+          <span class="link-text" style="margin-left: 10px;">
+            
+          </span>
+          
+          <img class="sid-img blue-image" src="static/fast-forward.png" alt="" style="height: 3rem; margin-top: 10px; ">
+        </span>
+      </li>
+      <li class="sid-item">
+        <img class="sid-img" src="static/deal.png" style="height: 50px;" alt="">
+        <span class="link-text"><a class="nav-link" href="">Deals</a></span>
+      </li>
+      <li class="sid-item sid-upr">
+        <img class="sid-img" src="static/premium.png" style="height: 50px;" alt="">
+        <span class="link-text"><a class="nav-link" href="">
+          plus+
+        </a></span>
+      </li>
+      <li class="sid-item">
+        <img class="sid-img" src="static/selective.png" style="height: 50px;" alt=""><span class="link-text" style="font-size: larger; float: right;"> Filter </span>
+      <!-- <div class="dropdown"> -->
+        <span class="link-text" style="font-size: larger; float: right;"> 
+        <!-- <div class="dropdown-content" style="border-radius: 15px; "> -->
+          <div class="container" style="height: 100px; width: 100px; margin-top: 20px; margin-bottom: 20px;">
+            <div class="row">
+              <div class="col-sm-12">
+                <div id="slider-range"></div>
+              </div>
+            </div>
+            <div class="row slider-labels" >
+              <div class="col-xs-6 caption">
+                <strong style="display: block;">Min:</strong> <span id="slider-range-value1" style="display: block;"></span>
+              </div>
+              <div class="col-xs-6 text-right caption">
+                <strong style="display: block;">Max:</strong> <span id="slider-range-value2" style="display: block;"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <form>
+                  <input type="hidden" name="min-value" value="">
+                  <input type="hidden" name="max-value" value="">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="new">
+            <label class="container-box">Max to Low
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container-box">Low to Max
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container-box">12V
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container-box">24V
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container-box">H4
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container-box">1141
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container-box">1016
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container-box">H1
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container-box">H7
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+        </span>
+        <!-- </div> -->
+      <!-- </div> -->
+      </li>
+      
+    </ul>
+  </nav>
+
+  <main style="margin-left: 115px;">
+    <h1 style="padding-top: 20px;">
+      Lights
+    </h1>
+    
+    <div class="row">
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2322.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>BOSS</strong>  </h5>
+          <h5>₹60 only, <strike style="color:#D3D3D3 ;"> <small>₹100</small></strike> </h5>
+          <p class="card-text">100/90W &nbsp  12V &nbsp P43 &nbsp H4</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2325.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>OSRAM</strong>  </h5>
+          <h5>₹60 only, <strike style="color:#D3D3D3 ;"> <small>₹100</small></strike> </h5>
+          <p class="card-text">100/90W &nbsp  12V &nbsp P43t &nbsp H4</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2328.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>LSK</strong>  </h5>
+          <h5>₹60 only, <strike style="color:#D3D3D3 ;"> <small>₹100</small></strike> </h5>
+          <p class="card-text">100/90W &nbsp  12V &nbsp P43 &nbsp H4</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2331.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>PHILIPS</strong>  </h5>
+          <h5>₹265 only, <strike style="color:#D3D3D3 ;"> <small>₹300</small></strike> </h5>
+          <p class="card-text">100/130W &nbsp  12V &nbsp P43t-38 &nbsp H4 </p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2335.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>RALLYE-OSRAM</strong>  </h5>
+          <h5>₹160 only, <strike style="color:#D3D3D3 ;"> <small>₹200</small></strike> </h5>
+          <p class="card-text">130/100W &nbsp  12V &nbsp P43t &nbsp H4</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2338.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>GS-ASCOT</strong>  </h5>
+          <h5>₹110 only, <strike style="color:#D3D3D3 ;"> <small>₹200</small></strike> </h5>
+          <p class="card-text">130/100W &nbsp  12V &nbsp P43T &nbsp H4</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2345.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>BOSS 1141 BOX(10Pcs)</strong>  </h5>
+          <h5>₹80 only, <strike style="color:#D3D3D3 ;"> <small>₹100</small></strike> </h5>
+          <p class="card-text">21W &nbsp  12V </p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2350.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>BOSS 1016 BOX(10Pcs)</strong>  </h5>
+          <h5>₹90 only, <strike style="color:#D3D3D3 ;"> <small>₹150</small></strike> </h5>
+          <p class="card-text">21/5W &nbsp  12V</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2359.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>OSRAM-RALLYE</strong>  </h5>
+          <h5>₹100 only, <strike style="color:#D3D3D3 ;"> <small>₹150</small></strike> </h5>
+          <p class="card-text">100W &nbsp  12V &nbspP14.5s &nbsp H1</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2366.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>VeRange</strong>  </h5>
+          <h5>₹50 only, <strike style="color:#D3D3D3 ;"> <small>₹150</small></strike> </h5>
+          <p class="card-text">100W &nbsp  12V &nbsp H1</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/IMG_2376.JPG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>WALTA</strong>  </h5>
+          <h5>₹110 only, <strike style="color:#D3D3D3 ;"> <small>₹150</small></strike> </h5>
+          <p class="card-text">100W &nbsp 12V &nbsp  H7</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 card-cards col-md-4 col-sm-12" style="width: 18rem; margin:10px; padding-top:7px; height:27rem;">
+        <img src="static/y.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <strong>BOSS</strong>  </h5>
+          <h5>₹70 only, <strike style="color:#D3D3D3 ;"> <small>₹150</small></strike> </h5>
+          <p class="card-text">100W &nbsp 12V &nbsp  H7</p>
+          <a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-primary" style="margin-left:100px ;">+Cart</a>
+        </div>
+      </div>
+      
+
+      
+
+      
+      
+    </div>
+  </main>
+</div> 
+
+<!-- FAQ -->
+
+
+<div style="border: 0.5px solid; margin-left: 90px; border-radius: 10px; padding: 10px; margin-top: 20px;">
+
+<h1>FAQ</h1>
+<div class="faq ">
+  <div class="faq_question">Q: What types of lights do you offer at QuikSpares?</div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: At QuikSpares, we offer a wide range of lights for different types of vehicles, including headlights, taillights, brake lights, turn signal lights, fog lights, and interior lights. We carry both OEM (original equipment manufacturer) and aftermarket lights to suit different needs and budgets.
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq_question">Q: What is the difference between OEM and aftermarket lights?
+  </div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: OEM lights are made by the vehicle manufacturer and are designed to fit and function exactly like the original parts that came with your vehicle. Aftermarket lights, on the other hand, are made by third-party manufacturers and may vary in quality and fitment. However, aftermarket lights can be a more affordable option and may offer additional features or customization options that OEM lights do not.
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq_question">Q: How do I know which type of light I need for my vehicle?
+  </div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: The installation process will vary depending on the type of light you are replacing and your specific vehicle. We recommend consulting your vehicle's owner manual or seeking professional assistance if you are unsure how to install your new lights. However, many lights can be easily installed with basic tools and some basic knowledge of automotive wiring.
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq_question">Q: Can I replace just one light, or do I need to replace both lights at the same time?
+
+  </div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: It is generally recommended to replace both lights at the same time, as the other light may also be nearing the end of its lifespan and may fail soon after the first one is replaced. Additionally, replacing both lights at once can help ensure that they match in terms of brightness and color.
+    </div>
+  </div>
+</div>
+
+
+<div class="faq">
+  <div class="faq_question">Q: What should I do if my lights are dim or not working properly?
+  </div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: Dim or malfunctioning lights can be caused by a variety of issues, including faulty wiring, a bad bulb, or a damaged lens. We recommend troubleshooting the issue by checking the wiring and connections, inspecting the bulb for damage, and ensuring that the lens is clean and free of cracks. If you are unable to diagnose or fix the issue, our customer service team can assist you in finding a solution.
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq_question">Q: Can I upgrade my lights to brighter or more energy-efficient options?
+  </div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: Yes, there are many options available for upgrading your vehicle's lights, including LED and HID lights that offer brighter and more energy-efficient lighting. Upgrading your lights can improve visibility and safety while driving, as well as enhance the overall look of your vehicle. At QuikSpares, we offer a range of upgrade options to suit different needs and budgets.
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq_question">Q: What is cash on delivery (COD)?
+  </div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: Cash on delivery is a payment option where customers can pay for their order in cash when it is delivered to their doorstep. This allows customers to receive their order first and pay for it later, making online shopping more convenient and accessible for those who do not have access to online payment methods.
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq_question">Q: Does QuikSpares offer COD?
+  </div>
+  <div class="faq_answer_container">
+  	<div class="faq_answer">A: Yes, QuikSpares does offer COD as a payment option for our customers. This allows our customers to make their purchase without the need for a credit card or online payment account, making it easier and more convenient for them to shop with us.
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<!-- FOOTER -->
+
+<div style="border: 0.5px solid; margin-left: 90px; border-radius: 10px; padding: 10px; margin-top: 20px;">
+
+
+  <footer
+          class="text-center text-lg-start text-white "
+          style="background-color: #929fba"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0 foot">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+                QuikSpares
+            </h6>
+            <p>
+              Here you can use QuikSpares to purchase your product
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a class="text-white">Bootstrap Angular</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Nagpur, 440013 , India</p>
+            <p><i class="fas fa-envelope mr-3"></i> rakshiekare44@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 75179 71707</p>
+            <p><i class="fas fa-print mr-3"></i> +91 87515 45612</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3b5998"
+               href="#!"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee"
+               href="#!"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #dd4b39"
+               href="#!"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="#!"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="#!"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="#!"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >QuikSpare.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<!-- End of .container -->
+</div>
+
+
+<script src="javascript/lights.js"></script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- fevicon -->
+  
+  <link rel="icon" type="image/x-icon" href="static/mechanic.png" sizes="16x16">
+
+  
+  <!-- font -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <title>QuikSpares</title>
+</head>
+
+<body class="container"  style="background-color:white">
+  <!-- news -->
+  <div class="hwrap bg-light" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); margin-bottom: 30px;">
+    <div class="hmove">
+       <div class="hitem" >Sale Sale Sale Sale</div>
+       <div class="hitem" >Aliquam consequat varius consequat.</div>
+       <div class="hitem" >Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
+       <div class="hitem" >Pellentesque auctor molestie orci ut blandit.</div>
+    </div>
+  </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg   bg-light navbar-light" style="border-radius: 20px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="static/mechanic.png" style="height: 50px;" alt=""></i><em class="red_brand">Quik</em><em>Spares</em></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+
+            <a class="nav-link " aria-current="page" href="#CATEGORIES">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#Deals">Deals</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" >
+          <input class="form-control form-control-md me-2" type="search" placeholder="Search" aria-label="Search" >
+          <button class="btn se btn-outline-success" type="submit"><img src="static/search-interface-symbol.png" alt="" style="height: 20px;"></button>
+        </form>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link active" aria-current="page" href="#"><img src="static/id-card.png " alt="" style="height: 30px;">&nbsp&nbsp</a>
+              <div class="dropdown-content" style="border-radius: 15px;">
+                <a href="signin.html">Signin</a>
+                <a href="signup.html">Signup</a>
+                <a href="#">About</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active notification" aria-current="page" href="#">
+              <img src="static/trolley.png " alt="" style="height: 30px;"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Categories -->
+<div class="">
+  <section id="pricing">
+
+  <div class="cat_slide" id="CATEGORIES" style="margin-top: 20px;">
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/Body.png" alt=""></a>
+        <p>Body</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/car_accessory-icon-particular-12.png" alt=""></a>
+        <p>Accessory</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/Engine.png" alt="" style="height: 100px;"></a>
+        <p>Engine</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/Fasteners.png" alt=""></a>
+        <p>Fasteners</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/Filters.png" alt="" style="height: 100px;"></a>
+        <p>Filters</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href="lights.html"><img src="static/parts/lights.png" alt="" style="height: 100px;"></a>
+        <p>Lights</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href="horns.html"><img src="static/speaker.png" alt="" style="height: 100px;"></a>
+        <p>Horns</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/Lubrication_Hydraulics.png" alt=""></a>
+        <p>Lubricants</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/Suspension.png" alt="" style="height:100px;"></a>
+        <p>Suspension</p>
+      </div>
+    </div>
+    <div class="card card_cat zoom " style=" border: 0px; width: 10rem; height:10rem;">
+      <div class="card-body card-body_cat bg-light">
+        <a href=""><img src="static/parts/Windshield.png" alt="" style="height:100px ;"></a>
+        <p>Windshield</p>
+      </div>
+    </div>
+  </div>
+
+
+  </section>
+  </div>
+
+  <!-- CAROSEL -->
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" style="margin-top: 20px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/female.jpg" class="d-block w-100 img_caro" alt="..." style="border-radius: 20px;">
+      </div>
+      <div class="carousel-item">
+        <img src="static/parts.jpg" class="d-block w-100 img_caro" alt="..." style="border-radius: 20px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!-- side_button -->
+<div class="green-line" id="Deals"></div>
+  <!-- DEALS -->
+  <h2 class="deal">Deals</h2>
+  <div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-12">
+  <div class="wrapper zoom_deal">
+    
+   <div class="card deals_card">
+      <div class="innercard in_card">
+          <img class="deals_img" src="static/light (2).png" width=300 height=300>
+      </div>
+   </div>    
+  </div>
+  </div>
+  
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="wrapper zoom_deal">
+      
+     <div class="card deals_card">
+        <div class="innercard in_card">
+            <img class="deals_img" src="static/light (3).png" width=300 height=300>
+        </div>
+     </div>    
+    </div>
+    </div>
+  
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="wrapper zoom_deal">
+        
+       <div class="card deals_card">
+          <div class="innercard in_card">
+              <img class="deals_img" src="static/light (1).jpg" width=300 height=300>
+          </div>
+       </div>    
+      </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="wrapper zoom_deal">
+          
+         <div class="card deals_card">
+            <div class="innercard in_card">
+                <img class="deals_img" src="static/light (1).png" width=300 height=300>
+            </div>
+         </div>    
+        </div>
+        </div>
+  
+  </div>
+  
+  <div class="green-line"></div>
+  
+  <!-- recently viewed -->
+  <h2 class="deal">Recently Viewed</h2>
+  <div class="row">
+    <div class="col-lg-2 col-md-4 col-sm-6">
+      <div class="card card_cat zoom " style=" border: 0px;">
+        <div class="card-body card-body_cat bg-light">
+          <img src="static/parts/Suspension.png" alt="" style="height: 100px;">
+        <p>Suspension</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6">
+      <div class="card card_cat zoom " style=" border: 0px;">
+        <div class="card-body card-body_cat bg-light">
+          <img src="static/parts/Windshield.png" alt="" style="height: 100px;">
+        <p>Windshield</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="green-line"></div>
+
+
+<div>
+<button class="btn btn-lg side-btn bg-light" style="border: 1px solid; color:black; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+  <img src="static/telephone.png" style="height: 30px;" alt="">
+  
+</button>
+</div>
+<!-- OEM --> 
+<h2 class="deal" style=" margin-bottom: 20px;">OEM</h2>
+<div class="scrollmenu bg-light">
+  <img class="oem-img" src="static/oem/1200px-Hella_logo.svg.png" alt="">
+  <img class="oem-img" src="static/oem/asmnki5rn4uma1vzc0dg.png" alt="">
+  <img class="oem-img" src="static/oem/Asset 5.png" alt="">
+  <img class="oem-img" src="static/oem/bosch.png" alt="">
+  <img class="oem-img" src="static/oem/Denso-Logo.wine.png" alt="">
+  <img class="oem-img" src="static/oem/download.jpeg" alt="">
+  <img class="oem-img" src="static/oem/images-1.png" alt="">
+  <img class="oem-img" src="static/oem/roots.jpg" alt="">
+  <img class="oem-img" src="static/oem/skf-logo-white.jpg" alt="">
+  <img class="oem-img" src="static/oem/spark minda.png" alt="">
+  <img class="oem-img" src="static/oem/unnamed.jpg" alt="">
+  <img class="oem-img" src="static/oem/uno minda.png" alt="">
+</div>
+
+<div class="green-line"></div>
+<!-- About -->
+
+<div class="bg-light about" style="padding: 20px; margin-top: 30px;margin-bottom: 30px; border-radius: 20px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+  <h1 style="color: #30D5C8;">QuikSpares #No.1</h1>
+  <p>At QuikSpares, we pride ourselves on being the number one destination for all your spare parts needs. Our extensive inventory of high-quality spare parts, combined with our expert customer service, makes us the go-to choice for businesses and individuals alike. Whether you need a replacement part for your car, truck, or industrial equipment, we have you covered with our wide selection of products and unbeatable prices.
+
+    QuikSpares is the industry leader when it comes to providing high-quality spare parts at affordable prices. Our team of experienced professionals is committed to delivering exceptional customer service and ensuring that you find exactly what you need for your equipment or machinery. We understand that downtime can be costly, which is why we offer fast and reliable shipping options to get you the parts you need, when you need them.
+    
+    When it comes to spare parts, there is no one better than QuikSpares. Our commitment to quality, affordability, and customer satisfaction sets us apart from the competition. We have built our reputation as the number one choice for businesses and individuals by providing a vast selection of top-quality parts, unbeatable prices, and exceptional customer service. So why trust anyone else? Choose QuikSpare for all your spare parts needs and experience the difference that sets us apart.</p>
+  <br>
+  <p>QuikSpares is more than just a spare parts supplier. We are your trusted partner in keeping your equipment running smoothly and efficiently. Our team of experts has decades of experience in the industry, and we understand the importance of quality, reliability, and affordability. That's why we work tirelessly to source only the best spare parts from reputable manufacturers and offer them at unbeatable prices.
+
+    When you choose QuikSpares, you are choosing a company that puts its customers first. We know that downtime can be costly, which is why we offer fast and efficient shipping options to ensure that you get your parts as quickly as possible. Our friendly and knowledgeable customer service team is always available to answer any questions you may have and help you find the parts you need. At QuikSpare, we are committed to providing a seamless and stress-free shopping experience.
+    
+    At QuikSpares, we are constantly striving to improve our services and products to better serve our customers. We invest in the latest technology and training to ensure that we stay ahead of the curve in the ever-changing world of spare parts. Our goal is to make it easy and affordable for you to get the spare parts you need, when you need them. With QuikSpare, you can trust that you are getting the best value for your money and the highest quality spare parts available.</p>
+  </div>
+<!-- review -->
+<div class="green-line"></div>
+<!-- Add icon library -->
+<div style="margin:20px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 10px; border-radius: 20px;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+</div>
+
+<div class="green-line"></div>
+
+
+
+<!-- footer  -->
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class=" my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white "
+          style="background-color: #929fba"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0 foot">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+                QuikSpares
+            </h6>
+            <p>
+              Here you can use QuikSpares to purchase your product
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a class="text-white">Bootstrap Angular</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Nagpur, 440013 , India</p>
+            <p><i class="fas fa-envelope mr-3"></i> rakshiekare44@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 75179 71707</p>
+            <p><i class="fas fa-print mr-3"></i> +91 87515 45612</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3b5998"
+               href="#!"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee"
+               href="#!"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #dd4b39"
+               href="#!"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="#!"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="#!"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="#!"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >QuikSpare.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+</main>
+<script src="javascript/index.js"></script>
+</body>
+</html>
